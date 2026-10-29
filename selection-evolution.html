@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolution of Selected Works in ARKO Selection From Solo New Pansori to Cross-Genre Changgeuk and Post-Rock Spectacle (2020–2025)</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Chart.js & Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js" crossorigin="anonymous"></script>
+
+    <style>
+      /* Define Google Sans - The Primary Font */
+      @font-face {
+          font-family: "Google Sans";
+          src: url("https://fonts.gstatic.com/s/googlesans/v58/4UaRrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iq2vgCI.woff2") format("woff2");
+          font-weight: 400; font-style: normal; font-display: swap;
+      }
+
+      /* Theme Variables - Source of Truth */
+      :root, html[data-theme="light"] {
+          --surface-color: #FFFFFF;
+          --on-surface: #1B1C1D;
+          --on-surface-variant: #575B5F;
+          --on-surface-low: #727676;
+
+          --outline: #747775;
+          --outline-variant: #C4C7C5;
+
+          --google-blue: #1A73E8;
+          --cyan: #12B5CB;
+          --magenta: #F538A0;
+          --tangerine: #FA903E;
+          --lavender: #C58AF9;
+          --mint-green: #81C995;
+          --red: #D93025;
+          --yellow: #FCC934;
+
+          --peer-medium: #AAAAAA;
+          --peer-light: #E0E2E5;
+
+          /* Matrix Swimlane Backgrounds & Borders */
+          --core-bg: #E8F0FE;
+          --core-border: #1A73E8;
+          --core-badge-bg: #D2E3FC;
+          --core-badge-text: #174EA6;
+
+          --comp-bg: #E4F7FA;
+          --comp-border: #12B5CB;
+          --comp-badge-bg: #CCF4F8;
+          --comp-badge-text: #007B83;
+
+          --non-bg: #F1F3F4;
+          --non-border: #C4C7C5;
+          --non-badge-bg: #E8EAED;
+          --non-badge-text: #5F6368;
+      }
+
+      html[data-theme="dark"] {
+          --surface-color: #141414;
+          --on-surface: #FFFFFF;
+          --on-surface-variant: #A2A9B0;
+          --on-surface-low: #9A9B9C;
+
+          --outline: #9A9B9C;
+          --outline-variant: #4A5050;
+
+          --google-blue: #1A73E8;
+          --cyan: #12B5CB;
+          --magenta: #F538A0;
+          --tangerine: #FA903E;
+          --lavender: #C58AF9;
+          --mint-green: #81C995;
+          --red: #D93025;
+          --yellow: #FCC934;
+
+          --peer-medium: #ACAFAF;
+          --peer-light: #2D3135;
+
+          /* Matrix Swimlane Backgrounds & Borders for Dark Mode */
+          --core-bg: rgba(26, 115, 232, 0.14);
+          --core-border: #8AB4F8;
+          --core-badge-bg: rgba(26, 115, 232, 0.28);
+          --core-badge-text: #D2E3FC;
+
+          --comp-bg: rgba(18, 181, 203, 0.14);
+          --comp-border: #78D9EC;
+          --comp-badge-bg: rgba(18, 181, 203, 0.28);
+          --comp-badge-text: #B4F1F9;
+
+          --non-bg: rgba(255, 255, 255, 0.04);
+          --non-border: #4A5050;
+          --non-badge-bg: rgba(255, 255, 255, 0.08);
+          --non-badge-text: #A2A9B0;
+      }
+
+      @media (pointer: fine) {
+          ::-webkit-scrollbar, ::-webkit-scrollbar-corner {
+              background: transparent;
+              height: 12px;
+              width: 12px;
+          }
+      }
+    </style>
+
+    <script>
+      tailwind.config = {
+        darkMode: ['class', '[data-theme="dark"]'],
+        theme: {
+          extend: {
+            fontFamily: { sans: ['"Google Sans"', '"Open Sans"', 'sans-serif'] },
+            colors: {
+              surface: 'var(--surface-color)',
+              'on-surface': 'var(--on-surface)',
+              'on-surface-variant': 'var(--on-surface-variant)',
+              'on-surface-low': 'var(--on-surface-low)',
+              outline: 'var(--outline)',
+              'outline-variant': 'var(--outline-variant)',
+              'google-blue': 'var(--google-blue)',
+              cyan: 'var(--cyan)',
+              yellow: 'var(--yellow)',
+              red: 'var(--red)',
+            }
+          }
+        }
+      }
+    </script>
+  <style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:"Google Sans", "Open Sans", sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.relative{position:relative}.col-span-2{grid-column:span 2 / span 2}.m-0{margin:0px}.mb-0{margin-bottom:0px}.mb-0\.5{margin-bottom:0.125rem}.mb-1{margin-bottom:0.25rem}.mb-1\.5{margin-bottom:0.375rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-2{height:0.5rem}.h-3{height:0.75rem}.h-44{height:11rem}.h-full{height:100%}.min-h-0{min-height:0px}.min-h-\[110px\]{min-height:110px}.w-full{width:100%}.w-2{width:0.5rem}.w-3{width:0.75rem}.max-w-\[800px\]{max-width:800px}.list-disc{list-style-type:disc}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.items-baseline{align-items:baseline}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.rounded{border-radius:0.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-sm{border-radius:0.125rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-outline-variant{border-color:var(--outline-variant)}.bg-surface{background-color:var(--surface-color)}.bg-\[var\(--comp-bg\)\]{background-color:var(--comp-bg)}.bg-\[var\(--core-bg\)\]{background-color:var(--core-bg)}.bg-\[var\(--non-badge-bg\)\]{background-color:var(--non-badge-bg)}.bg-\[var\(--non-bg\)\]{background-color:var(--non-bg)}.bg-\[var\(--outline\)\]{background-color:var(--outline)}.bg-cyan{background-color:var(--cyan)}.bg-google-blue{background-color:var(--google-blue)}.bg-slate-400{--tw-bg-opacity:1;background-color:rgb(148 163 184 / var(--tw-bg-opacity, 1))}.p-4{padding:1rem}.p-2{padding:0.5rem}.p-2\.5{padding:0.625rem}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.pb-2{padding-bottom:0.5rem}.pl-4{padding-left:1rem}.pt-1\.5{padding-top:0.375rem}.pt-2{padding-top:0.5rem}.text-center{text-align:center}.font-sans{font-family:"Google Sans", "Open Sans", sans-serif}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-normal{line-height:1.5}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.text-on-surface{color:var(--on-surface)}.text-\[\#B06000\]{--tw-text-opacity:1;color:rgb(176 96 0 / var(--tw-text-opacity, 1))}.text-\[\#C5221F\]{--tw-text-opacity:1;color:rgb(197 34 31 / var(--tw-text-opacity, 1))}.text-\[var\(--comp-badge-text\)\]{color:var(--comp-badge-text)}.text-\[var\(--core-badge-text\)\]{color:var(--core-badge-text)}.text-\[var\(--non-badge-text\)\]{color:var(--non-badge-text)}.text-cyan{color:var(--cyan)}.text-google-blue{color:var(--google-blue)}.text-on-surface-low{color:var(--on-surface-low)}.text-on-surface-variant{color:var(--on-surface-variant)}.dark\:text-\[\#F28B82\]:is([data-theme="dark"] *){--tw-text-opacity:1;color:rgb(242 139 130 / var(--tw-text-opacity, 1))}.dark\:text-\[\#FDD663\]:is([data-theme="dark"] *){--tw-text-opacity:1;color:rgb(253 214 99 / var(--tw-text-opacity, 1))}@media (min-width: 640px){.sm\:col-span-1{grid-column:span 1 / span 1}.sm\:inline{display:inline}.sm\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.sm\:grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}}@media (min-width: 768px){.md\:grid{display:grid}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:p-6{padding:1.5rem}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}}.\[\&_a\]\:text-inherit a{color:inherit}.\[\&_a\]\:underline a{-webkit-text-decoration-line:underline;text-decoration-line:underline}</style></head>
+
+  <body class="font-sans bg-surface text-on-surface m-0 p-4 md:p-6 flex justify-center w-full">
+    <figure class="w-full max-w-[800px] flex flex-col gap-6">
+      
+      <!-- Title Block -->
+      <div class="mb-0">
+        <h3 class="text-2xl md:text-3xl font-normal text-on-surface leading-tight tracking-tight">
+          Evolution of Selected Works in ARKO Selection From <b>Solo New Pansori</b> to Cross-Genre Changgeuk and Post-Rock Spectacle (2020–2025)
+        </h3>
+      </div>
+
+      <!-- Visualization Container -->
+      <div id="viz-container" class="relative w-full flex flex-col gap-6">
+        
+        <!-- Summary KPI Metrics Strip -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <div class="p-3 rounded-lg border border-outline-variant/60 bg-surface flex flex-col">
+            <span class="text-xs text-on-surface-variant font-medium">조사 확정 총 선정작</span>
+            <div class="flex items-baseline gap-1 mt-1">
+              <span class="text-2xl font-bold text-on-surface">19</span>
+              <span class="text-xs text-on-surface-low font-normal">편 (6개 시즌)</span>
+            </div>
+            <span class="text-[11px] text-on-surface-low mt-1">2020~2025 창작산실</span>
+          </div>
+
+          <div class="p-3 rounded-lg border border-google-blue/40 bg-[var(--core-bg)] flex flex-col">
+            <span class="text-xs text-[var(--core-badge-text)] font-semibold flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-google-blue"></span> 핵심 사례 (판소리·창극)
+            </span>
+            <div class="flex items-baseline gap-1 mt-1">
+              <span class="text-2xl font-bold text-google-blue">6</span>
+              <span class="text-xs text-on-surface-variant font-normal">편 (31.6%)</span>
+            </div>
+            <span class="text-[11px] text-on-surface-variant mt-1">2027 공모 직접 대응 양식</span>
+          </div>
+
+          <div class="p-3 rounded-lg border border-cyan/40 bg-[var(--comp-bg)] flex flex-col">
+            <span class="text-xs text-[var(--comp-badge-text)] font-semibold flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-cyan"></span> 비교 사례 (보컬·설화)
+            </span>
+            <div class="flex items-baseline gap-1 mt-1">
+              <span class="text-2xl font-bold text-cyan">6</span>
+              <span class="text-xs text-on-surface-variant font-normal">편 (31.6%)</span>
+            </div>
+            <span class="text-[11px] text-on-surface-variant mt-1">기획·유통·서사 벤치마킹</span>
+          </div>
+
+          <div class="p-3 rounded-lg border border-outline-variant/60 bg-[var(--non-bg)] flex flex-col">
+            <span class="text-xs text-on-surface-variant font-medium flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-[var(--outline)]"></span> 비해당 (순수 기악)
+            </span>
+            <div class="flex items-baseline gap-1 mt-1">
+              <span class="text-2xl font-bold text-on-surface-variant">7</span>
+              <span class="text-xs text-on-surface-low font-normal">편 (36.8%)</span>
+            </div>
+            <span class="text-[11px] text-on-surface-low mt-1">타악·생황·정악 연주곡</span>
+          </div>
+        </div>
+
+        <!-- Section 1: Quantitative Chart Breakdown -->
+        <div class="flex flex-col gap-2 p-4 rounded-xl border border-outline-variant/60 bg-surface">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2 border-b border-outline-variant/30">
+            <h4 class="text-sm font-semibold text-on-surface">시즌별(13회~18회) 전통예술 및 교차선정 19편 범주 분포</h4>
+            
+            <!-- Custom HTML Legend -->
+            <div class="flex items-center gap-3 text-xs text-on-surface-variant flex-wrap">
+              <div class="flex items-center gap-1.5">
+                <span class="w-3 h-3 rounded-sm bg-google-blue"></span>
+                <span>핵심 사례 (판소리·창극·연희극)</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <span class="w-3 h-3 rounded-sm bg-cyan"></span>
+                <span>비교 사례 (전통보컬·설화 변용)</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <span class="w-3 h-3 rounded-sm bg-slate-400"></span>
+                <span>비해당 (순수 기악·타악)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Canvas Wrapper Pattern -->
+          <div class="relative w-full h-44 min-h-0">
+            <canvas id="categoryDistributionChart" style="box-sizing: border-box; display: block; height: 176px; width: 766px;" width="766" height="176"></canvas>
+          </div>
+        </div>
+
+        <!-- Section 2: Evolution Arc Callout -->
+        <div class="p-3.5 rounded-lg border border-google-blue/30 bg-surface flex flex-col gap-2">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-bold uppercase tracking-wider text-google-blue bg-[var(--core-bg)] px-2 py-0.5 rounded border border-google-blue/30">
+              Style Evolution Arc
+            </span>
+            <span class="text-xs font-medium text-on-surface">핵심 창작판소리·창극 형식의 6개년 양식 진화 궤적</span>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-5 gap-2 text-center text-xs">
+            <div class="p-2 rounded bg-surface border border-outline-variant/40 flex flex-col items-center">
+              <span class="text-[10px] text-on-surface-low font-bold">2020년 13회</span>
+              <span class="font-semibold text-on-surface mt-0.5">1인 독창 새판소리</span>
+              <span class="text-[10px] text-on-surface-variant mt-0.5">제·바디 더늠 탐구</span>
+            </div>
+            <div class="p-2 rounded bg-surface border border-outline-variant/40 flex flex-col items-center">
+              <span class="text-[10px] text-on-surface-low font-bold">2022년 15회</span>
+              <span class="font-semibold text-on-surface mt-0.5">판소리 떼창 앙상블</span>
+              <span class="text-[10px] text-on-surface-variant mt-0.5">다성부 합창 소리극</span>
+            </div>
+            <div class="p-2 rounded bg-surface border border-outline-variant/40 flex flex-col items-center">
+              <span class="text-[10px] text-on-surface-low font-bold">2023년 16회</span>
+              <span class="font-semibold text-on-surface mt-0.5">전원 남성 올메일 창극</span>
+              <span class="text-[10px] text-on-surface-variant mt-0.5">서구 고전 탐미적 번안</span>
+            </div>
+            <div class="p-2 rounded bg-surface border border-outline-variant/40 flex flex-col items-center">
+              <span class="text-[10px] text-on-surface-low font-bold">2024년 17회</span>
+              <span class="font-semibold text-on-surface mt-0.5">퀴어 현대 여성국극</span>
+              <span class="text-[10px] text-on-surface-variant mt-0.5">연극 분야 교차선정</span>
+            </div>
+            <div class="p-2 rounded bg-surface border border-outline-variant/40 flex flex-col items-center col-span-2 sm:col-span-1">
+              <span class="text-[10px] text-on-surface-low font-bold">2025년 18회</span>
+              <span class="font-semibold text-on-surface mt-0.5">포스트록 &amp; 서사 탈춤</span>
+              <span class="text-[10px] text-on-surface-variant mt-0.5">적벽가 스펙터클·연희극</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 3: The 6-Season Categorical Matrix -->
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center justify-between">
+            <h4 class="text-sm font-semibold text-on-surface tracking-tight">
+              연도별 선정작 타임라인 매트릭스 (13회 2020년 ~ 18회 2025년)
+            </h4>
+            <span class="text-xs text-on-surface-low font-normal">카드 상단 배지: 교차선정 분야 및 공모 ID</span>
+          </div>
+
+          <!-- Matrix Table Header (Swimlane Columns) -->
+          <div class="hidden md:grid grid-cols-3 gap-3 text-xs font-semibold">
+            <div class="p-2.5 rounded-lg border border-google-blue/30 bg-[var(--core-bg)] text-google-blue flex items-center justify-between">
+              <span>핵심 사례 (판소리·창극·연희극)</span>
+              <span class="text-[11px] font-bold px-1.5 py-0.5 rounded bg-surface/80">6편</span>
+            </div>
+            <div class="p-2.5 rounded-lg border border-cyan/30 bg-[var(--comp-bg)] text-cyan flex items-center justify-between">
+              <span>비교 사례 (보컬·설화·고전 변용)</span>
+              <span class="text-[11px] font-bold px-1.5 py-0.5 rounded bg-surface/80">6편</span>
+            </div>
+            <div class="p-2.5 rounded-lg border border-outline-variant/60 bg-[var(--non-bg)] text-on-surface-variant flex items-center justify-between">
+              <span>비해당 (순수 기악·타악·정악)</span>
+              <span class="text-[11px] font-bold px-1.5 py-0.5 rounded bg-surface/80">7편</span>
+            </div>
+          </div>
+
+          <!-- Season 1: 13회 (2020년 선정 / 2021년 초연) -->
+          <div class="flex flex-col gap-2 pt-2 border-t border-outline-variant/50">
+            <div class="flex items-center justify-between gap-2">
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-bold px-2 py-0.5 rounded bg-surface border border-outline-variant text-on-surface">
+                  13회 (2020년 선정)
+                </span>
+                <span class="text-xs text-on-surface-variant">초연 시즌: 2021년 상반기</span>
+              </div>
+              <span class="text-[11px] text-on-surface-low">총 3편 확정</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+              <!-- Core Case -->
+              <div class="p-3 rounded-lg border flex flex-col justify-between gap-2.5" style="background-color: var(--core-bg); border-color: var(--core-border);">
+                <div>
+                  <div class="flex items-center justify-between gap-1 mb-1.5">
+                    <span class="font-mono text-[11px] font-bold px-1.5 py-0.5 rounded bg-surface/90 border border-outline-variant/40 text-on-surface">A-2020-01</span>
+                    <span class="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-google-blue/15 text-google-blue">전통예술</span>
+                  </div>
+                  <h5 class="text-sm font-bold text-on-surface leading-snug mb-1">새판소리 &lt;마당을 나온 암탉&gt;</h5>
+                  <p class="text-xs font-medium text-on-surface-variant mb-1">지기학 (소리꾼·연출)</p>
+                  <p class="text-xs text-on-surface leading-relaxed">현대 창작 판소리 1인 소리극. 판소리의 '제(制)·바디·더늠' 고전 문법을 현대 아동소설 서사에 엄밀하게 계승·재창조.</p>
+                </div>
+                <div class="pt-2 border-t border-outline-variant/30 flex items-center justify-between text-[11px] text-on-surface-variant">
+                  <span>초연: 2021.02.03~02.07</span>
+                  <span>아르코 소극장</span>
+                </div>
+              </div>
+
+              <!-- Comparative Case -->
+              <div class="p-3 rounded-lg border flex flex-col justify-between gap-2.5" style="background-color: var(--comp-bg); border-color: var(--comp-border);">
+                <div>
+                  <div class="flex items-center justify-between gap-1 mb-1.5">
+                    <span class="font-mono text-[11px] font-bold px-1.5 py-0.5 rounded bg-surface/90 border border-outline-variant/40 text-on-surface">A-2020-02</span>
+                    <span class="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-cyan/15 text-cyan">전통예술</span>
+                  </div>
+                  <h5 class="text-sm font-bold text-on-surface leading-snug mb-1">&lt;新 심방곡&gt;</h5>
+                  <p class="text-xs font-medium text-on-surface-variant mb-1">신노이 (SINNOI)</p>
+                  <p class="text-xs text-on-surface leading-relaxed">전통 경기소리 및 구음 보컬과 재즈 콘트라베이스, 일렉트로닉 사운드의 융합을 통한 현대 무속 샤머니즘 음악화.</p>
+                </div>
+                <div class="pt-2 border-t border-outline-variant/30 flex items-center justify-between text-[11px] text-on-surface-variant">
+                  <span>초연: 2021.01.29~01.31</span>
+                  <span>대학로 대극장</span>
+                </div>
+              </div>
+
+              <!-- Non-Applicable Case -->
+              <div class="p-3 rounded-lg border flex flex-col justify-between gap-2.5" style="background-color: var(--non-bg); border-color: var(--non-border);">
+                <div>
+                  <div class="flex items-center justify-between gap-1 mb-1.5">
+                    <span class="font-mono text-[11px] font-bold px-1.5 py-0.5 rounded bg-surface/90 border border-outline-variant/40 text-on-surface">A-2020-03</span>
+                    <span class="text-[11px] font-medium px-2 py-0.5 rounded-full bg-[var(--non-badge-bg)] text-[var(--non-badge-text)]">순수 기악</span>
+                  </div>
+                  <h5 class="text-sm font-bold text-on-surface leading-snug mb-1">&lt;울릴 굉 轟&gt;</h5>
+                  <p class="text-xs font-medium text-on-surface-variant mb-1">임용주</p>
+                  <p class="text-xs text-on-surface-variant leading-relaxed">편경·특경 등 전통 타악기 음향과 모듈러 신디사이저의 전자음향을 융합한 앰비언트 사운드아트 기악 작품.</p>
+                </div>
+                <div class="pt-2 border-t border-outline-variant/30 flex items-center justify-between text-[11px] text-on-surface-variant">
+                  <span>초연: 2021.02.19~02.21</span>
+                  <span>아르코 대극장</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Season 2: 14회 (2021년 선정 / 2022년 초연) -->
+          <div class="flex flex-col gap-2 pt-2 border-t border-outline-variant/50">
+            <div class="flex items-center justify-between gap-2">
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-bold px-2 py-0.5 rounded bg-surface border border-outline-variant text-on-surface">
+                  14회 (2021년 선정)
+                </span>
+                <span class="text-xs text-on-surface-variant">초연 시즌: 2022년 상반기</span>
+              </div>
+              <span class="text-[11px] text-on-surface-low">총 3편 확정 (기악·연희 콘서트 집중)</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+              <!-- Core Case: None -->
+              <div class="h-full min-h-[110px] p-3 rounded-lg border border-dashed border-outline-variant/50 flex flex-col items-center justify-center text-center bg-surface/40">
+                <span class="text-xs text-on-surface-low font-medium">핵심 서사극 선정작 없음</span>
+                <span class="text-[11px] text-on-surface-low mt-0.5">순수 탈춤 콘서트 및 연희 타악 중심 선정 시즌</span>
+              </div>
+
+              <!-- Comparative Cases (2 works stacked) -->
+              <div class="flex flex-col gap-2.5">
+                <div class="p-3 rounded-lg border flex flex-col justify-between gap-2" style="background-color: var(--comp-bg); border-color: var(--comp-border);">
+                  <div>
+                    <div class="flex items-center justify-between gap-1 mb-1">
+                      <span class="font-mono text-[11px] font-bold px-1.5 py-0.5 rounded bg-surface/90 border border-outline-variant/40 text-on-surface">A-2021-01</span>
+                      <span class="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-cyan/15 text-cyan">전통예술</span>
+                    </div>
+                    <h5 class="text-sm font-bold text-on-surface leading-snug mb-0.5">정가악회 &lt;탈춤은 탈춤&gt;</h5>
+                    <p class="text-xs font-medium text-on-surface-variant mb-1">정가악회</p>
+                    <p class="text-xs text-on-surface leading-relaxed">전통 봉산·고성탈춤의 대사와 몸짓을 10인조 전통 기악과 보컬 중심의 콘서트 형식으로 입체화.</p>
+                  </div>
+                  <div class="pt-1.5 border-t border-outline-variant/30 flex items-center justify-between text-[11px] text-on-surface-variant">
+                    <span>초연: 2022.01.14~01.16</span>
+                    <span>대학로 대극장</span>
+                  </div>
+                </div>
+
+                <div class="p-3 rounded-lg border flex flex-col justify-between gap-2" style="background-color: var(--comp-bg); border-color: var(--comp-border);">
+                  <div>
+                    <div class="flex items-center justify-between gap-1 mb-1">
+                      <span class="font-mono text-[11px] font-bold px-1.5 py-0.5 rounded bg-surface/90 border border-outline-variant/40 text-on-surface">A-2021-02</span>
+                      <span class="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-cyan/15 text-cyan">전통예술</span>
+                    </div>
+                    <h5 class="text-sm font-bold text-on-surface leading-snug mb-0.5">&lt;TIMER&gt;</h5>
+                    <p class="text-xs font-medium text-on-surface-variant mb-1">연희앙상블 비단</p>
+                    <p class="text-xs text-on-surface leading-relaxed">전통 연희의 장단과 악기 구성을 현대인의 시간에 대한 감각과 결합한 넌버벌 전통 연희 음악극.</p>
+                  </div>
+                  <div class="pt-1.5 border-t border-outline-variant/30 flex items-center justify-between text-[11px] text-on-surface-variant">
+                    <span>초연: 2022.02.18~02.20</span>
+                    <span>아르코 소극장</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Non-Applicable Case -->
+              <div class="p-3 rounded-lg border flex flex-col justify-between gap-2.5" style="background-color: var(--non-bg); border-color: var(--non-border);">
+                <div>
+                  <div class="flex items-center justify-between gap-1 mb-1.5">
+                    <span class="font-mono text-[11px] font-bold px-1.5 py-0.5 rounded bg-surface/90 border border-outline-variant/40 text-on-surface">A-2021-03</span>
+                    <span class="text-[11px] font-medium px-2 py-0.5 rounded-full bg-[var(--non-badge-bg)] text-[var(--non-badge-text)]">순수 기악</span>
+                  </div>
+                  <h5 class="text-sm font-bold text-on-surface leading-snug mb-1">&lt;꼭두각시&gt;</h5>
+                  <p class="text-xs font-medium text-on-surface-variant mb-1">음악동인고물</p>
+                  <p class="text-xs text-on-surface-variant leading-relaxed">전통 인형극 꼭두각시놀음의 음악적 파편을 실내악 기악 합주로 해체·재조합한 기악 탐구 공연.</p>
+                </div>
+                <div class="pt-2 border-t border-outline-variant/30 flex items-center justify-between text-[11px] text-on-surface-variant">
+                  <span>초연: 2022.02.25~02.27</span>
+                  <span>대학로 대극장</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Season 3: 15회 (2022년 선정 / 2023년 초연) -->
+          <div class="flex flex-col gap-2 pt-2 border-t border-outline-variant/50">
+            <div class="flex items-center justify-between gap-2">
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-bold px-2 py-0.5 rounded bg-surface border border-outline-variant text-on-surface">
+                  15회 (2022년 선정)
+                </span>
+                <span class="text-xs text-on-surface-variant">초연 시즌: 2023년 상반기</span>
+              </div>
+              <span class="text-[11px] text-on-surface-low">총 2편 확정</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+              <!-- Core Case -->
+              <div class="p-3 rounded-lg border flex flex-col justify-between gap-2.5" style="background-color: var(--core-bg); border-color: var(--core-border);">
+                <div>
+                  <div class="flex items-center justify-between gap-1 mb-1.5">
+                    <span class="font-mono text-[11px] font-bold px-1.5 py-0.5 rounded bg-surface/90 border border-outline-variant/40 text-on-surface">A-2022-01</span>
+                    <span class="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-google-blue/15 text-google-blue">전통예술</span>
+                  </div>
+                  <h5 class="text-sm font-bold text-on-surface leading-snug mb-1">&lt;오버더떼창: 문전본풀이&gt;</h5>
+                  <p class="text-xs font-medium text-on-surface-variant mb-1">판소리아지트 놀애박스 (박인혜 등)</p>
+                  <p class="text-xs text-on-surface leading-relaxed">제주 가택신화 '문전본풀이'를 모티프로 1인 독창 중심의 판소리를 다성부 합창·떼창(코러스)과 입체적 연희로 혁신한 현대 판소리 앙상블 극.</p>
+                </div>
+                <div class="pt-2 border-t border-outline-variant/30 flex items-center justify-between text-[11px] text-on-surface-variant">
+                  <span>초연: 2023.01.27~01.29</span>
+                  <span>대학로 소극장</span>
+                </div>
+              </div>
+
+              <!-- Comparative Case: None -->
+              <div class="h-full min-h-[110px] p-3 rounded-lg border border-dashed border-outline-variant/50 flex flex-col items-center justify-center text-center bg-surface/40">
+                <span class="text-xs text-on-surface-low font-medium">비교 사례 선정작 없음</span>
+                <span class="text-[11px] text-on-surface-low mt-0.5">합창 판소리 극과 창작 타악으로 압축 선정</span>
+              </div>
+
+              <!-- Non-Applicable Case -->
+              <div class="p-3 rounded-lg border flex flex-col justify-between gap-2.5" style="background-color: var(--non-bg); border-color: var(--non-border);">
+                <div>
+                  <div class="flex items-center justify-between gap-1 mb-1.5">
+                    <span class="font-mono text-[11px] font-bold px-1.5 py-0.5 rounded bg-surface/90 border border-outline-variant/40 text-on-surface">A-2022-02</span>
+                    <span class="text-[11px] font-medium px-2 py-0.5 rounded-full bg-[var(--non-badge-bg)] text-[var(--non-badge-text)]">순수 기악</span>
+                  </div>
+                  <h5 class="text-sm font-bold text-on-surface leading-snug mb-1">&lt;RE: 오리지널리티&gt;</h5>
+                  <p class="text-xs font-medium text-on-surface-variant mb-1">홍성현아트컴퍼니</p>
+                  <p class="text-xs text-on-surface-variant leading-relaxed">전통 풍물 장단과 쇠·징·장구·북의 원형적 울림을 현대 무대 기악 리듬으로 확장한 타악 퍼포먼스.</p>
+                </div>
+                <div class="pt-2 border-t border-outline-variant/30 flex items-center justify-between text-[11px] text-on-surface-variant">
+                  <span>초연: 2023.02.17~02.19</span>
+                  <span>대학로 소극장</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Season 4: 16회 (2023년 선정 / 2024년 초연) - Cross Genre Year -->
+          <div class="flex flex-col gap-2 pt-2 border-t border-outline-variant/50">
+            <div class="flex items-center justify-between gap-2">
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-bold px-2 py-0.5 rounded bg-surface border border-outline-variant text-on-surface">
+                  16회 (2023년 선정)
+                </span>
+                <span class="text-xs text-on-surface-variant">초연 시즌: 2024년 상반기</span>
+                <span class="hidden sm:inline text-[11px] font-bold px-1.5 py-0.2 rounded bg-yellow/20 text-[#B06000] dark:text-[#FDD663] border border-yellow/30">
+                  ★ 연극·뮤지컬 인접 장르 교차선정 심층 확인
+                </span>
+              </div>
+              <span class="text-[11px] text-on-surface-low">총 5편 확정</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+              <!-- Core Case -->
+              <div class="p-3 rounded-lg border flex flex-col justify-between gap-2.5" style="background-color: var(--core-bg); border-color: var(--core-border);">
+                <div>
+                  <div class="flex items-center justify-between gap-1 mb-1.5">
+                    <span class="font-mono text-[11px] font-bold px-1.5 py-0.5 rounded bg-surface/90 border border-outline-variant/40 text-on-surface">A-2023-01</span>
+                    <span class="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-google-blue/15 text-google-blue">전통예술</span>
+                  </div>
+                  <h5 class="text-sm font-bold text-on-surface leading-snug mb-1">&lt;남성창극 살로메&gt;</h5>
+                  <p class="text-xs font-medium text-on-surface-variant mb-1">김시화 (살로메: 김준수·윤제원, 헤로데: 유태평양)</p>
+                  <p class="text-xs text-on-surface leading-relaxed">오스카 와일드 원작을 12명의 남성 소리꾼 전원 캐스팅으로 재해석. 인간의 광기와 집착을 탐미적 판소리 작창과 그로테스크한 창극 미학으로 극대화.</p>
+                </div>
+                <div class="pt-2 border-t border-outline-variant/30 flex items-center justify-between text-[11px] text-on-surface-variant">
+                  <span>초연: 2024.02.02~02.04</span>
+                  <span>대학로 대극장</span>
+                </div>
+              </div>
+
+              <!-- Comparative Cases (2 works: Theater & Musical Cross-Genre) -->
+              <div class="flex flex-col gap-2.5">
+                <div class="p-3 rounded-lg border flex flex-col justify-between gap-2" style="background-color: var(--comp-bg); border-color: var(--comp-border);">
+                  <div>
+                    <div class="flex items-center justify-between gap-1 mb-1">
+                      <span class="font-mono text-[11px] font-bold px-1.5 py-0.5 rounded bg-surface/90 border border-outline-variant/40 text-on-surface">A-2023-06</span>
+                      <span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-yellow/20 text-[#B06000] dark:text-[#FDD663] border border-yellow/40">연극 분야 선정</span>
+                    </div>
+                    <h5 class="text-sm font-bold text-on-surface leading-snug mb-0.5">&lt;언덕의 바리&gt;</h5>
+                    <p class="text-xs font-medium text-on-surface-variant mb-1">프로젝트 내친김에 (고연옥 작 / 김정 연출)</p>
+                    <p class="text-xs text-on-surface leading-relaxed">전통 바리데기 무속 신화와 독립운동가 안경신의 삶을 교차하여, 죽음과 생명의 모순을 동시대 연극 서사로 전복.</p>
+                  </div>
+                  <div class="pt-1.5 border-t border-outline-variant/30 flex items-center justify-between text-[11px] text-on-surface-variant">
+                    <span>초연: 2024.01.06~01.14</span>
+                    <span>대학로 대극장</span>
+                  </div>
+                </div>
+
+                <div class="p-3 rounded-lg border flex flex-col justify-between gap-2" style="background-color: var(--comp-bg); border-color: var(--comp-border);">
+                  <div>
+                    <div class="flex items-center justify-between gap-1 mb-1">
+                      <span class="font-mono text-[11px] font-bold px-1.5 py-0.5 rounded bg-surface/90 border border-outline-variant/40 text-on-surface">A-2023-07</span>
+                      <span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-red/15 text-[#C5221F] dark:text-[#F28B82] border border-red/30">창작뮤지컬 선정</span>
+                    </div>
+                    <h5 class="text-sm font-bold text-on-surface leading-snug mb-0.5">&lt;여기, 피화당&gt;</h5>
+                    <p class="text-xs font-medium text-on-surface-variant mb-1">주식회사 홍컴퍼니 (김한솔 작 / 김은 연출)</p>
+                    <p class="text-xs text-on-surface leading-relaxed">고전소설 &lt;박씨전&gt;의 창작 배경을 모티프로 병자호란 이후 여성들의 연대와 상처 치유를 극중극 판타지로 구축.</p>
+                  </div>
+                  <div class="pt-1.5 border-t border-outline-variant/30 flex items-center justify-between text-[11px] text-on-surface-variant">
+                    <span>초연: 2024.02.07~04.14</span>
+                    <span>플러스씨어터</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Non-Applicable Cases (2 works stacked) -->
+              <div class="flex flex-col gap-2.5">
+                <div class="p-3 rounded-lg border flex flex-col justify-between gap-2" style="background-color: var(--non-bg); border-color: var(--non-border);">
+                  <div>
+                    <div class="flex items-center justify-between gap-1 mb-1">
+                      <span class="font-mono text-[11px] font-bold px-1.5 py-0.5 rounded bg-surface/90 border border-outline-variant/40 text-on-surface">A-2023-02</span>
+                      <span class="text-[11px] font-medium px-2 py-0.5 rounded-full bg-[var(--non-badge-bg)] text-[var(--non-badge-text)]">순수 기악</span>
+                    </div>
+                    <h5 class="text-sm font-bold text-on-surface leading-snug mb-0.5">&lt;만중삭만 - 잊혀진 숨들의 기억&gt;</h5>
+                    <p class="text-xs text-on-surface-variant leading-relaxed">전통 정악 '영산회상'의 사라진 가락과 숨결을 복원한 국악 실내악 연주곡.</p>
+                  </div>
+                  <div class="pt-1.5 border-t border-outline-variant/30 flex items-center justify-between text-[11px] text-on-surface-variant">
+                    <span>초연: 2024.01</span>
+                    <span>아르코 대극장</span>
+                  </div>
+                </div>
+
+                <div class="p-3 rounded-lg border flex flex-col justify-between gap-2" style="background-color: var(--non-bg); border-color: var(--non-border);">
+                  <div>
+                    <div class="flex items-center justify-between gap-1 mb-1">
+                      <span class="font-mono text-[11px] font-bold px-1.5 py-0.5 rounded bg-surface/90 border border-outline-variant/40 text-on-surface">A-2023-03</span>
+                      <span class="text-[11px] font-medium px-2 py-0.5 rounded-full bg-[var(--non-badge-bg)] text-[var(--non-badge-text)]">순수 기악</span>
+                    </div>
+                    <h5 class="text-sm font-bold text-on-surface leading-snug mb-0.5">&lt;물의 놀이&gt;</h5>
+                    <p class="text-xs text-on-surface-variant leading-relaxed">물(水)의 생명력과 순환을 다양한 전통 현악·관악 주법으로 묘사한 기악곡.</p>
+                  </div>
+                  <div class="pt-1.5 border-t border-outline-variant/30 flex items-center justify-between text-[11px] text-on-surface-variant">
+                    <span>초연: 2024.02</span>
+                    <span>대학로 소극장</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Season 5: 17회 (2024년 선정 / 2025년 초연) -->
+          <div class="flex flex-col gap-2 pt-2 border-t border-outline-variant/50">
+            <div class="flex items-center justify-between gap-2">
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-bold px-2 py-0.5 rounded bg-surface border border-outline-variant text-on-surface">
+                  17회 (2024년 선정)
+                </span>
+                <span class="text-xs text-on-surface-variant">초연 시즌: 2025년 상반기</span>
+                <span class="hidden sm:inline text-[11px] font-bold px-1.5 py-0.2 rounded bg-yellow/20 text-[#B06000] dark:text-[#FDD663] border border-yellow/30">
+                  ★ 연극 분야 선정된 퀴어 여성국극 주목
+                </span>
+              </div>
+              <span class="text-[11px] text-on-surface-low">총 3편 확정</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+              <!-- Core Case: Queer Yeoseong Gukgeuk (Cross-Selected into Theater) -->
+              <div class="p-3 rounded-lg border flex flex-col justify-between gap-2.5" style="background-color: var(--core-bg); border-color: var(--core-border);">
+                <div>
+                  <div class="flex items-center justify-between gap-1 mb-1.5">
+                    <span class="font-mono text-[11px] font-bold px-1.5 py-0.5 rounded bg-surface/90 border border-outline-variant/40 text-on-surface">A-2024-01</span>
+                    <span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-yellow/20 text-[#B06000] dark:text-[#FDD663] border border-yellow/40">연극 분야 선정</span>
+                  </div>
+                  <h5 class="text-sm font-bold text-on-surface leading-snug mb-1">&lt;벼개가 된 사나히&gt;</h5>
+                  <p class="text-xs font-medium text-on-surface-variant mb-1">여성국극제작소 (고연옥 작 / 구자혜 연출 / 박수빈·황지영 작창)</p>
+                  <p class="text-xs text-on-surface leading-relaxed">전통 여성국극의 이분법적 젠더 규범에 젠더퀴어 '소년'을 투입하여 성별·세대 경계를 전복. 판소리 작창과 파격적 연극 미학의 결합.</p>
+                </div>
+                <div class="pt-2 border-t border-outline-variant/30 flex items-center justify-between text-[11px] text-on-surface-variant">
+                  <span>초연: 2025.01.11~01.19</span>
+                  <span>아르코 대극장</span>
+                </div>
+              </div>
+
+              <!-- Comparative Case -->
+              <div class="p-3 rounded-lg border flex flex-col justify-between gap-2.5" style="background-color: var(--comp-bg); border-color: var(--comp-border);">
+                <div>
+                  <div class="flex items-center justify-between gap-1 mb-1.5">
+                    <span class="font-mono text-[11px] font-bold px-1.5 py-0.5 rounded bg-surface/90 border border-outline-variant/40 text-on-surface">A-2024-02</span>
+                    <span class="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-cyan/15 text-cyan">전통예술</span>
+                  </div>
+                  <h5 class="text-sm font-bold text-on-surface leading-snug mb-1">&lt;해원해줄게요: REMASTER&gt;</h5>
+                  <p class="text-xs font-medium text-on-surface-variant mb-1">창작단체 해원</p>
+                  <p class="text-xs text-on-surface leading-relaxed">진도씻김굿의 원혼 천도와 해원(解冤) 의식을 현대인의 심리 치유와 결합한 현대적 보컬 음악극 리마스터 공연.</p>
+                </div>
+                <div class="pt-2 border-t border-outline-variant/30 flex items-center justify-between text-[11px] text-on-surface-variant">
+                  <span>초연: 2025.01</span>
+                  <span>대학로 소극장</span>
+                </div>
+              </div>
+
+              <!-- Non-Applicable Case -->
+              <div class="p-3 rounded-lg border flex flex-col justify-between gap-2.5" style="background-color: var(--non-bg); border-color: var(--non-border);">
+                <div>
+                  <div class="flex items-center justify-between gap-1 mb-1.5">
+                    <span class="font-mono text-[11px] font-bold px-1.5 py-0.5 rounded bg-surface/90 border border-outline-variant/40 text-on-surface">A-2024-03</span>
+                    <span class="text-[11px] font-medium px-2 py-0.5 rounded-full bg-[var(--non-badge-bg)] text-[var(--non-badge-text)]">순수 기악·성악</span>
+                  </div>
+                  <h5 class="text-sm font-bold text-on-surface leading-snug mb-1">남도 선소리 - 시를 읊다 &lt;님이 침묵한...&gt;</h5>
+                  <p class="text-xs font-medium text-on-surface-variant mb-1">창작그룹 2N제곱</p>
+                  <p class="text-xs text-on-surface-variant leading-relaxed">남도 선소리·시조의 선율적 호흡과 근대 시문학을 결합한 전통 성악 및 기악 연주회.</p>
+                </div>
+                <div class="pt-2 border-t border-outline-variant/30 flex items-center justify-between text-[11px] text-on-surface-variant">
+                  <span>초연: 2025.01</span>
+                  <span>아르코 대극장</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Season 6: 18회 (2025년 선정 / 2026년 초연) -->
+          <div class="flex flex-col gap-2 pt-2 border-t border-outline-variant/50">
+            <div class="flex items-center justify-between gap-2">
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-bold px-2 py-0.5 rounded bg-surface border border-outline-variant text-on-surface">
+                  18회 (2025년 선정)
+                </span>
+                <span class="text-xs text-on-surface-variant">초연 시즌: 2026년 1~2월</span>
+                <span class="hidden sm:inline text-[11px] font-bold px-1.5 py-0.2 rounded bg-google-blue/15 text-google-blue border border-google-blue/30">
+                  ★ 포스트록 판소리 대작 &amp; 서사 탈춤극 동시 포진
+                </span>
+              </div>
+              <span class="text-[11px] text-on-surface-low">총 3편 확정</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+              <!-- Core Cases (2 works stacked) -->
+              <div class="flex flex-col gap-2.5">
+                <div class="p-3 rounded-lg border flex flex-col justify-between gap-2" style="background-color: var(--core-bg); border-color: var(--core-border);">
+                  <div>
+                    <div class="flex items-center justify-between gap-1 mb-1">
+                      <span class="font-mono text-[11px] font-bold px-1.5 py-0.5 rounded bg-surface/90 border border-outline-variant/40 text-on-surface">A-2025-01</span>
+                      <span class="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-google-blue/15 text-google-blue">전통예술</span>
+                    </div>
+                    <h5 class="text-sm font-bold text-on-surface leading-snug mb-0.5">잠비나이 &lt;적벽&gt;</h5>
+                    <p class="text-xs font-medium text-on-surface-variant mb-1">잠비나이 (이일우 음악감독) x 오단해 (소리·작창)</p>
+                    <p class="text-xs text-on-surface leading-relaxed">판소리 &lt;적벽가&gt;의 군사 서사를 헤비메탈·포스트록 밴드 사운드와 결합하여 전장 한복판의 공감각적 전투를 구현한 대형 음악 서사극.</p>
+                  </div>
+                  <div class="pt-1.5 border-t border-outline-variant/30 flex items-center justify-between text-[11px] text-on-surface-variant">
+                    <span>초연: 2026.01.23~01.25</span>
+                    <span>대학로 대극장</span>
+                  </div>
+                </div>
+
+                <div class="p-3 rounded-lg border flex flex-col justify-between gap-2" style="background-color: var(--core-bg); border-color: var(--core-border);">
+                  <div>
+                    <div class="flex items-center justify-between gap-1 mb-1">
+                      <span class="font-mono text-[11px] font-bold px-1.5 py-0.5 rounded bg-surface/90 border border-outline-variant/40 text-on-surface">A-2025-02</span>
+                      <span class="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-google-blue/15 text-google-blue">전통예술</span>
+                    </div>
+                    <h5 class="text-sm font-bold text-on-surface leading-snug mb-0.5">&lt;봄을 안고 온 아이&gt;</h5>
+                    <p class="text-xs font-medium text-on-surface-variant mb-1">극단 동화가 꽃피는 마당</p>
+                    <p class="text-xs text-on-surface leading-relaxed">탈춤의 신명과 탈짓을 서정적인 사계절 모험 서사와 유기적으로 결합한 온 가족 타깃의 창작 탈춤 연희극.</p>
+                  </div>
+                  <div class="pt-1.5 border-t border-outline-variant/30 flex items-center justify-between text-[11px] text-on-surface-variant">
+                    <span>초연: 2026.02.13~02.15</span>
+                    <span>아르코 소극장</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Comparative Case: None -->
+              <div class="h-full min-h-[110px] p-3 rounded-lg border border-dashed border-outline-variant/50 flex flex-col items-center justify-center text-center bg-surface/40">
+                <span class="text-xs text-on-surface-low font-medium">비교 사례 선정작 없음</span>
+                <span class="text-[11px] text-on-surface-low mt-0.5">판소리 록 대작과 연희 서사극으로 핵심역량 집중</span>
+              </div>
+
+              <!-- Non-Applicable Case -->
+              <div class="p-3 rounded-lg border flex flex-col justify-between gap-2.5" style="background-color: var(--non-bg); border-color: var(--non-border);">
+                <div>
+                  <div class="flex items-center justify-between gap-1 mb-1.5">
+                    <span class="font-mono text-[11px] font-bold px-1.5 py-0.5 rounded bg-surface/90 border border-outline-variant/40 text-on-surface">A-2025-04</span>
+                    <span class="text-[11px] font-medium px-2 py-0.5 rounded-full bg-[var(--non-badge-bg)] text-[var(--non-badge-text)]">순수 기악</span>
+                  </div>
+                  <h5 class="text-sm font-bold text-on-surface leading-snug mb-1">김효영의 생황 &lt;숨x굿&gt;</h5>
+                  <p class="text-xs font-medium text-on-surface-variant mb-1">김효영 (예술감독·작곡)</p>
+                  <p class="text-xs text-on-surface-variant leading-relaxed">생황의 숨결을 모티프로 율기, 전통타악, 전자음악, 무용을 결합한 순수 기악 중심의 '숨'의 여정.</p>
+                </div>
+                <div class="pt-2 border-t border-outline-variant/30 flex items-center justify-between text-[11px] text-on-surface-variant">
+                  <span>초연: 2026.01.29~01.31</span>
+                  <span>아르코 소극장</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 4: Strategic Application Takeaway Box -->
+        <div class="p-4 rounded-xl border border-outline-variant/60 bg-surface flex flex-col gap-2">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-bold uppercase tracking-wider text-google-blue bg-google-blue/10 px-2 py-0.5 rounded">
+              2027 지원전략 핵심 시사점
+            </span>
+            <span class="text-xs font-semibold text-on-surface">과거 선정 패턴에서 도출된 3대 심의 설득 포인트</span>
+          </div>
+          <ul class="text-xs text-on-surface-variant space-y-1.5 list-disc pl-4 leading-relaxed">
+            <li>
+              <strong class="text-on-surface">양식의 대형화와 장르 전복:</strong> 1인 판소리(2020)에서 앙상블 떼창(2022), 올메일 창극(2023), 퀴어 여성국극(2024), 포스트록 적벽가(2025)로 진화. 단순 복원보다 <em>동시대적 담론(젠더·연대·평화)과의 충돌</em>이 심의 핵심 가점 요인임.
+            </li>
+            <li>
+              <strong class="text-on-surface">타 분야(연극·뮤지컬)와의 작창 협업 증빙:</strong> 연극 분야로 선정된 &lt;벼개가 된 사나히&gt;(&lt;언덕의 바리&gt; 고연옥 작가, 구자혜 연출, 박수빈·황지영 작창)처럼 극작·연출·작창의 <em>다전문성 협업 체계</em>가 명확히 서류와 데모 음원에서 입증되어야 함.
+            </li>
+            <li>
+              <strong class="text-on-surface">무대 실현 가능성과 사운드 설계:</strong> 잠비나이의 포스트록이나 놀애박스의 다성부 코러스처럼, <em>기존 전통 음향을 뛰어넘는 구체적인 사운드 디자인 및 편곡 계획서</em>가 심의위원들의 실연 실현성 평가를 좌우함.
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Figcaption & Verified External Citations -->
+      <figcaption class="flex flex-col gap-3">
+        <span id="caption-text" class="text-sm text-on-surface-variant leading-relaxed">
+          Chronological mapping of 19 confirmed works from the 13th (2020) through 18th (2025) ARKO Selection (New Work of the Year) in Traditional Arts and related Theater/Musical categories. Core cases (highlighted in blue) represent Pansori, Changgeuk, Yeoseong Gukgeuk, and mask-dance drama formats directly relevant to the 2027 application.
+        </span>
+        <div class="text-xs text-on-surface-variant [&amp;_a]:underline [&amp;_a]:text-inherit leading-normal">
+          Data sources: <a href="https://www.arko.or.kr/content/6151" target="_blank" rel="noopener noreferrer">ARKO 창작산실 아카이브 (18회)</a>, <a href="https://theater.arko.or.kr/product/performance/259430" target="_blank" rel="noopener noreferrer">아르코·대학로예술극장 (적벽)</a>, <a href="https://www.arko.or.kr/content/5450" target="_blank" rel="noopener noreferrer">ARKO 창작산실 아카이브 (14회)</a>, <a href="https://www.arko.or.kr/content/5979" target="_blank" rel="noopener noreferrer">ARKO 창작산실 아카이브 (15회)</a>, <a href="https://www.arko.or.kr/content/5356" target="_blank" rel="noopener noreferrer">ARKO 창작산실 아카이브 (13회)</a>, <a href="https://www.arko.or.kr/content/6092" target="_blank" rel="noopener noreferrer">ARKO 창작산실 아카이브 (16회)</a>, <a href="https://www.arko.or.kr/content/6150" target="_blank" rel="noopener noreferrer">ARKO 창작산실 아카이브 (17회)</a>, <a href="https://www.arko.or.kr/yearbook/?subPage=210&amp;volume=2024&amp;genre=%EA%B3%B5%EC%97%B0%EC%98%88%EC%88%A0&amp;table_n=%ED%8E%B8%EB%9E%8C&amp;idx=912" target="_blank" rel="noopener noreferrer">한국문화예술위원회 공연예술연감</a>, <a href="https://theater.arko.or.kr/product/performance/258028" target="_blank" rel="noopener noreferrer">아르코예술극장 (남성창극 살로메)</a>, <a href="https://kopis.or.kr/por/db/pblprfr/pblprfrView.do?mt20Id=PF171122" target="_blank" rel="noopener noreferrer">KOPIS 공연예술통합전산망 (마당을 나온 암탉)</a>
+        </div>
+      </figcaption>
+    </figure>
+
+    <script>
+      let chartInstance = null;
+
+      function renderChart() {
+        const ctx = document.getElementById('categoryDistributionChart');
+        if (!ctx) return;
+
+        const colorBlue = getComputedStyle(document.documentElement).getPropertyValue('--google-blue').trim() || '#1A73E8';
+        const colorCyan = getComputedStyle(document.documentElement).getPropertyValue('--cyan').trim() || '#12B5CB';
+        const colorGray = '#94A3B8';
+        const onSurface = getComputedStyle(document.documentElement).getPropertyValue('--on-surface').trim() || '#1B1C1D';
+        const onSurfaceVariant = getComputedStyle(document.documentElement).getPropertyValue('--on-surface-variant').trim() || '#575B5F';
+        const outlineVariant = getComputedStyle(document.documentElement).getPropertyValue('--outline-variant').trim() || '#C4C7C5';
+        const surfaceColor = getComputedStyle(document.documentElement).getPropertyValue('--surface-color').trim() || '#FFFFFF';
+
+        // Set Chart.js global defaults
+        Chart.defaults.font.family = "'Google Sans', 'Open Sans', sans-serif";
+        Chart.defaults.color = onSurface;
+
+        if (chartInstance) {
+          chartInstance.destroy();
+        }
+
+        chartInstance = new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: ['13회(2020)', '14회(2021)', '15회(2022)', '16회(2023)', '17회(2024)', '18회(2025)'],
+            datasets: [
+              {
+                label: '핵심 사례 (판소리·창극·연희극)',
+                data: [1, 0, 1, 1, 1, 2],
+                backgroundColor: colorBlue,
+                borderRadius: 4,
+                borderSkipped: false,
+                clip: false,
+                stack: 'arkostack'
+              },
+              {
+                label: '비교 사례 (전통보컬·설화 변용)',
+                data: [1, 2, 0, 2, 1, 0],
+                backgroundColor: colorCyan,
+                borderRadius: 4,
+                borderSkipped: false,
+                clip: false,
+                stack: 'arkostack'
+              },
+              {
+                label: '비해당 (순수 기악·타악·정악)',
+                data: [1, 1, 1, 2, 1, 1],
+                backgroundColor: colorGray,
+                borderRadius: 4,
+                borderSkipped: false,
+                clip: false,
+                stack: 'arkostack'
+              }
+            ]
+          },
+          options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: false,
+            layout: {
+              padding: { top: 4, right: 15, bottom: 0, left: 0 }
+            },
+            scales: {
+              x: {
+                stacked: true,
+                grace: '5%',
+                ticks: {
+                  stepSize: 1,
+                  font: { family: "'Google Sans', 'Open Sans', sans-serif", size: 11 },
+                  color: onSurfaceVariant
+                },
+                grid: {
+                  color: outlineVariant,
+                  lineWidth: 0.75,
+                  drawTicks: false
+                },
+                border: { display: false }
+              },
+              y: {
+                stacked: true,
+                ticks: {
+                  font: { family: "'Google Sans', 'Open Sans', sans-serif", size: 12, weight: '500' },
+                  color: onSurface
+                },
+                grid: { display: false },
+                border: { display: false }
+              }
+            },
+            plugins: {
+              legend: { display: false },
+              tooltip: {
+                backgroundColor: surfaceColor,
+                titleColor: onSurface,
+                bodyColor: onSurfaceVariant,
+                borderColor: outlineVariant,
+                borderWidth: 1,
+                padding: 10,
+                titleFont: { family: "'Google Sans', 'Open Sans', sans-serif", size: 13, weight: 'bold' },
+                bodyFont: { family: "'Google Sans', 'Open Sans', sans-serif", size: 12 },
+                boxPadding: 4,
+                callbacks: {
+                  label: function(context) {
+                    return ` ${context.dataset.label}: ${context.raw}편`;
+                  }
+                }
+              },
+              datalabels: {
+                display: function(context) {
+                  return context.dataset.data[context.dataIndex] > 0;
+                },
+                color: '#FFFFFF',
+                font: { family: "'Google Sans', 'Open Sans', sans-serif", weight: 'bold', size: 11 },
+                formatter: function(val) {
+                  return val + '편';
+                }
+              }
+            }
+          },
+          plugins: [ChartDataLabels]
+        });
+      }
+
+      // Theme Listener
+      window.addEventListener("message", (event) => {
+        if (event.data && (event.data.theme === "light" || event.data.theme === "dark")) {
+          document.documentElement.setAttribute("data-theme", event.data.theme);
+          setTimeout(() => {
+            renderChart();
+          }, 50);
+        }
+      });
+
+      // Race Condition Fix: Wait for fonts ready before drawing Chart.js canvas
+      document.fonts.ready.then(() => {
+        renderChart();
+      });
+    </script>
+  
+</body></html>
