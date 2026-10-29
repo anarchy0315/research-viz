@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traditional Arts Achieved a 40.0% Selection Rate in Creative Subject Grants While New Work Evaluation Shifts Weight to Live Realization</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Chart.js and DataLabels Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js" crossorigin="anonymous"></script>
+
+    <style>
+      /* Define Google Sans - The Primary Font */
+      @font-face {
+          font-family: "Google Sans";
+          src: url("https://fonts.gstatic.com/s/googlesans/v58/4UaRrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iq2vgCI.woff2") format("woff2");
+          font-weight: 400; font-style: normal; font-display: swap;
+      }
+
+      /* Theme Variables - Source of Truth */
+      :root, html[data-theme="light"] {
+          --surface-color: #FFFFFF;
+          --on-surface: #1B1C1D;
+          --on-surface-variant: #575B5F;
+          --on-surface-low: #727676;
+
+          --outline: #747775;
+          --outline-variant: #E0E3E1;
+
+          --google-blue: #1A73E8;
+          --cyan: #12B5CB;
+          --magenta: #F538A0;
+          --tangerine: #FA903E;
+          --lavender: #C58AF9;
+          --mint-green: #81C995;
+          --red: #D93025;
+          --yellow: #FCC934;
+
+          --peer-medium: #8A9096;
+          --peer-light: #D6DADC;
+          --card-bg: #F8F9FA;
+      }
+      html[data-theme="dark"] {
+          --surface-color: #141414;
+          --on-surface: #FFFFFF;
+          --on-surface-variant: #A2A9B0;
+          --on-surface-low: #9A9B9C;
+
+          --outline: #9A9B9C;
+          --outline-variant: #34383A;
+
+          --google-blue: #1A73E8;
+          --cyan: #12B5CB;
+          --magenta: #F538A0;
+          --tangerine: #FA903E;
+          --lavender: #C58AF9;
+          --mint-green: #81C995;
+          --red: #D93025;
+          --yellow: #FCC934;
+
+          --peer-medium: #70757A;
+          --peer-light: #3C4043;
+          --card-bg: #1E1F21;
+      }
+
+      @media (pointer: fine) {
+          ::-webkit-scrollbar, ::-webkit-scrollbar-corner {
+              background: transparent;
+              height: 8px;
+              width: 8px;
+          }
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        darkMode: ['class', '[data-theme="dark"]'],
+        theme: {
+          extend: {
+            fontFamily: { sans: ['"Google Sans"', '"Open Sans"', 'sans-serif'] },
+            colors: {
+              surface: 'var(--surface-color)',
+              'on-surface': 'var(--on-surface)',
+              'on-surface-variant': 'var(--on-surface-variant)',
+              'on-surface-low': 'var(--on-surface-low)',
+              outline: 'var(--outline)',
+              'outline-variant': 'var(--outline-variant)',
+              'card-bg': 'var(--card-bg)'
+            }
+          }
+        }
+      }
+    </script>
+  <style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:"Google Sans", "Open Sans", sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.relative{position:relative}.m-0{margin:0px}.my-1\.5{margin-top:0.375rem;margin-bottom:0.375rem}.mb-1{margin-bottom:0.25rem}.mt-0\.5{margin-top:0.125rem}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.h-2\.5{height:0.625rem}.h-32{height:8rem}.h-44{height:11rem}.min-h-0{min-height:0px}.w-2\.5{width:0.625rem}.w-full{width:100%}.max-w-\[800px\]{max-width:800px}.flex-grow{flex-grow:1}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.items-baseline{align-items:baseline}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-sm{border-radius:0.125rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-outline-variant{border-color:var(--outline-variant)}.bg-card-bg{background-color:var(--card-bg)}.bg-surface{background-color:var(--surface-color)}.p-2\.5{padding:0.625rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.pb-3{padding-bottom:0.75rem}.pt-1{padding-top:0.25rem}.pt-4{padding-top:1rem}.font-sans{font-family:"Google Sans", "Open Sans", sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.tracking-tight{letter-spacing:-0.025em}.text-on-surface{color:var(--on-surface)}.text-on-surface-variant{color:var(--on-surface-variant)}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}@media (min-width: 640px){.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}}@media (min-width: 768px){.md\:p-5{padding:1.25rem}.md\:p-6{padding:1.5rem}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}.md\:text-sm{font-size:0.875rem;line-height:1.25rem}}.\[\&_a\]\:text-inherit a{color:inherit}.\[\&_a\]\:underline a{-webkit-text-decoration-line:underline;text-decoration-line:underline}</style></head>
+  <body class="font-sans bg-surface text-on-surface m-0 p-4 md:p-6 flex justify-center w-full antialiased">
+    <figure class="w-full max-w-[800px] flex flex-col gap-6">
+      <!-- Title -->
+      <div class="mb-1">
+        <h3 class="text-2xl md:text-3xl font-normal text-on-surface leading-snug">
+          Traditional Arts Achieved a <b>40.0% Selection Rate</b> in Creative Subject Grants While New Work Evaluation Shifts Weight to Live Realization
+        </h3>
+      </div>
+
+      <!-- Visualization Container -->
+      <div id="viz-container" class="relative w-full flex flex-col gap-6">
+        
+        <!-- PANEL A: 올해의신작 배점 구조 비교 -->
+        <div class="p-4 md:p-5 rounded-xl border border-outline-variant bg-surface flex flex-col gap-4">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-outline-variant pb-3">
+            <div>
+              <h4 class="text-base font-semibold text-on-surface">A. 공연예술창작산실 ‘올해의신작’ 심의 단계별 배점 구조 비교</h4>
+              <p class="text-xs text-on-surface-variant mt-0.5">서류·인터뷰(1차) 통과 후, 2차에서는 제작계획(30%)보다 실연 완성도(50%)로 중점 이동</p>
+            </div>
+            <!-- Custom HTML Legend for Panel A -->
+            <div class="flex flex-wrap items-center gap-3 text-xs text-on-surface-variant font-medium">
+              <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full" style="background-color: var(--google-blue);"></span>작품·실연 수월성</span>
+              <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full" style="background-color: var(--cyan);"></span>제작 실현가능성</span>
+              <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full" style="background-color: var(--peer-medium);"></span>작품 파급효과</span>
+            </div>
+          </div>
+
+          <!-- Canvas Wrapper for Panel A -->
+          <div class="relative w-full flex-grow min-h-0 h-32">
+            <canvas id="chartStageWeights" style="box-sizing: border-box; display: block; height: 128px; width: 613px;" width="613" height="128"></canvas>
+          </div>
+
+          <div class="p-2.5 rounded-lg bg-card-bg text-xs text-on-surface-variant flex items-center justify-between gap-2">
+            <span><b>심의 전략 포인트:</b> 1차 통과를 위해선 구체적 제작 로드맵(40%)이 필수적이나, 최종 본공연 선정은 <b>무대화 쇼케이스 실연(50%)</b>의 음악·극적 완성도가 좌우합니다.</span>
+          </div>
+        </div>
+
+        <!-- PANEL B: 창작주체 공모 경쟁률 및 지원 규모 -->
+        <div class="p-4 md:p-5 rounded-xl border border-outline-variant bg-surface flex flex-col gap-4">
+          <div class="flex flex-col gap-1 border-b border-outline-variant pb-3">
+            <h4 class="text-base font-semibold text-on-surface">B. 공연예술창작주체(2024 정시공모) 분야별 접수 및 선정 현황</h4>
+            <p class="text-xs text-on-surface-variant">전통예술 분야는 신청 35건 중 14건이 선정되어 타 장르 대비 높은 선정률(40.0%)과 총 13.81억 원을 확보</p>
+          </div>
+
+          <!-- Scorecard KPI Cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <!-- Card 1 -->
+            <div class="p-3.5 rounded-lg border border-outline-variant bg-card-bg flex flex-col justify-between">
+              <span class="text-xs text-on-surface-variant font-medium">전통예술 선정률</span>
+              <div class="my-1.5 flex items-baseline gap-1">
+                <span class="text-2xl font-bold text-on-surface tracking-tight" style="color: var(--google-blue);">40.0%</span>
+                <span class="text-xs text-on-surface-variant font-normal">/ 신청 35건 중 14건</span>
+              </div>
+              <span class="text-[11px] text-on-surface-variant">연극·뮤지컬(29.7%) 대비 +10.3%p 상회</span>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="p-3.5 rounded-lg border border-outline-variant bg-card-bg flex flex-col justify-between">
+              <span class="text-xs text-on-surface-variant font-medium">전통예술 총 지원결정액</span>
+              <div class="my-1.5 flex items-baseline gap-1">
+                <span class="text-2xl font-bold text-on-surface tracking-tight">13.81</span>
+                <span class="text-xs text-on-surface-variant font-medium">억 원</span>
+              </div>
+              <span class="text-[11px] text-on-surface-variant">전체 지원예산(104.03억 원) 중 13.3% 점유</span>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="p-3.5 rounded-lg border border-outline-variant bg-card-bg flex flex-col justify-between">
+              <span class="text-xs text-on-surface-variant font-medium">단체당 평균 지원규모</span>
+              <div class="my-1.5 flex items-baseline gap-1">
+                <span class="text-2xl font-bold text-on-surface tracking-tight">9,864</span>
+                <span class="text-xs text-on-surface-variant font-medium">만 원</span>
+              </div>
+              <span class="text-[11px] text-on-surface-variant">선정 14개 단체 대상 중장기 역량 집중 도약</span>
+            </div>
+          </div>
+
+          <!-- Sub-header & Legend for Panel B Chart -->
+          <div class="flex items-center justify-between text-xs text-on-surface-variant pt-1">
+            <span class="font-medium text-on-surface">분야별 신청 및 선정 건수 비교</span>
+            <div class="flex items-center gap-3 font-medium">
+              <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-sm" style="background-color: var(--peer-light);"></span>신청 건수</span>
+              <span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-sm" style="background-color: var(--google-blue);"></span>선정 건수 (선정률)</span>
+            </div>
+          </div>
+
+          <!-- Canvas Wrapper for Panel B -->
+          <div class="relative w-full flex-grow min-h-0 h-44">
+            <canvas id="chartGenreComparison" style="box-sizing: border-box; display: block; height: 176px; width: 613px;" width="613" height="176"></canvas>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Caption & Data Source -->
+      <figcaption class="flex flex-col gap-2.5 border-t border-outline-variant pt-4">
+        <span id="caption-text" class="text-xs md:text-sm text-on-surface-variant leading-relaxed">
+          Top panel shows official evaluation criteria weights for ARKO Selection (New Work of the Year) between Stage 1 (Document/Interview) and Stage 2 (Live Showcase Deliberation). Bottom panel compares application counts, selected projects, and selection rates in the 2024 Performing Arts Creative Subject regular call (total 298 applications, 99 selected, total grant 10.403 billion KRW; Traditional Arts received 1.381 billion KRW across 14 selected entities).
+        </span>
+        <div class="text-xs text-on-surface-variant [&amp;_a]:underline [&amp;_a]:text-inherit">
+          Data sources: <a href="https://www.arko.or.kr/board/view/4014?bid=463&amp;cid=1807491&amp;sf_icon_category=cw00000020" target="_blank" rel="noopener noreferrer">한국문화예술위원회(ARKO) 2024 창작주체 심의결과</a>, <a href="https://www.arko.or.kr/business/pup_2018_05_1.jsp" target="_blank" rel="noopener noreferrer">한국문화예술위원회(ARKO) 창작산실 심의안내</a>
+        </div>
+      </figcaption>
+    </figure>
+
+    <script>
+      let chartStageWeightsInstance = null;
+      let chartGenreComparisonInstance = null;
+
+      function renderVisualizations() {
+        // Register DataLabels
+        Chart.register(ChartDataLabels);
+
+        const computedStyle = getComputedStyle(document.documentElement);
+        const googleBlue = computedStyle.getPropertyValue('--google-blue').trim();
+        const cyan = computedStyle.getPropertyValue('--cyan').trim();
+        const peerMedium = computedStyle.getPropertyValue('--peer-medium').trim();
+        const peerLight = computedStyle.getPropertyValue('--peer-light').trim();
+        const onSurface = computedStyle.getPropertyValue('--on-surface').trim();
+        const onSurfaceVariant = computedStyle.getPropertyValue('--on-surface-variant').trim();
+        const outlineVariant = computedStyle.getPropertyValue('--outline-variant').trim();
+        const surfaceColor = computedStyle.getPropertyValue('--surface-color').trim();
+
+        // Chart.js Global Settings
+        Chart.defaults.font.family = "'Google Sans', 'Open Sans', sans-serif";
+        Chart.defaults.font.size = 13;
+        Chart.defaults.color = onSurface;
+
+        // ----------------------------------------------------
+        // Chart 1: Stage Evaluation Weights (100% Stacked Bar)
+        // ----------------------------------------------------
+        const ctxStage = document.getElementById('chartStageWeights').getContext('2d');
+        if (chartStageWeightsInstance) chartStageWeightsInstance.destroy();
+
+        chartStageWeightsInstance = new Chart(ctxStage, {
+          type: 'bar',
+          data: {
+            labels: ['1차 서류·인터뷰 심의', '2차 실연심의 (쇼케이스)'],
+            datasets: [
+              {
+                label: '작품/실연의 수월성',
+                data: [40, 50],
+                backgroundColor: googleBlue,
+                borderWidth: 0,
+                barThickness: 28,
+              },
+              {
+                label: '제작의 실현 가능성',
+                data: [40, 30],
+                backgroundColor: cyan,
+                borderWidth: 0,
+                barThickness: 28,
+              },
+              {
+                label: '작품의 파급효과',
+                data: [20, 10],
+                backgroundColor: peerMedium,
+                borderWidth: 0,
+                barThickness: 28,
+              }
+            ]
+          },
+          options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: false,
+            layout: {
+              padding: { top: 4, bottom: 4, left: 0, right: 12 }
+            },
+            scales: {
+              x: {
+                stacked: true,
+                max: 100,
+                ticks: {
+                  callback: (val) => val + '%',
+                  color: onSurfaceVariant,
+                  font: { family: "'Google Sans', 'Open Sans', sans-serif", size: 12 }
+                },
+                grid: {
+                  color: outlineVariant,
+                  drawTicks: false
+                },
+                border: { display: false }
+              },
+              y: {
+                stacked: true,
+                ticks: {
+                  color: onSurface,
+                  font: { family: "'Google Sans', 'Open Sans', sans-serif", size: 13, weight: '600' }
+                },
+                grid: { display: false },
+                border: { display: false }
+              }
+            },
+            plugins: {
+              legend: { display: false },
+              tooltip: {
+                backgroundColor: surfaceColor,
+                titleColor: onSurface,
+                bodyColor: onSurfaceVariant,
+                borderColor: outlineVariant,
+                borderWidth: 1,
+                titleFont: { family: "'Google Sans', 'Open Sans', sans-serif", size: 13, weight: 'bold' },
+                bodyFont: { family: "'Google Sans', 'Open Sans', sans-serif", size: 13 },
+                padding: 10,
+                callbacks: {
+                  label: (ctx) => ` ${ctx.dataset.label}: ${ctx.raw}%`
+                }
+              },
+              datalabels: {
+                color: '#FFFFFF',
+                font: { family: "'Google Sans', 'Open Sans', sans-serif", size: 13, weight: '700' },
+                formatter: (value) => value + '%',
+                anchor: 'center',
+                align: 'center'
+              }
+            }
+          }
+        });
+
+        // ----------------------------------------------------
+        // Chart 2: Creative Subject Applications vs Selection
+        // ----------------------------------------------------
+        const ctxGenre = document.getElementById('chartGenreComparison').getContext('2d');
+        if (chartGenreComparisonInstance) chartGenreComparisonInstance.destroy();
+
+        const selectionRates = [' (선정률 33.2%)', ' (선정률 29.7%)', ' (선정률 40.0% ★)'];
+
+        chartGenreComparisonInstance = new Chart(ctxGenre, {
+          type: 'bar',
+          data: {
+            labels: ['전체 (총괄)', '연극·뮤지컬', '전통예술'],
+            datasets: [
+              {
+                label: '신청 건수',
+                data: [298, 145, 35],
+                backgroundColor: peerLight,
+                borderRadius: 4,
+                barThickness: 16,
+                datalabels: {
+                  anchor: 'end',
+                  align: 'right',
+                  color: onSurfaceVariant,
+                  font: { family: "'Google Sans', 'Open Sans', sans-serif", size: 12, weight: '500' },
+                  formatter: (val) => val + '건'
+                }
+              },
+              {
+                label: '선정 건수',
+                data: [99, 43, 14],
+                backgroundColor: [peerMedium, peerMedium, googleBlue],
+                borderRadius: 4,
+                barThickness: 16,
+                datalabels: {
+                  anchor: 'end',
+                  align: 'right',
+                  color: (ctx) => ctx.dataIndex === 2 ? googleBlue : onSurface,
+                  font: { family: "'Google Sans', 'Open Sans', sans-serif", size: 12, weight: '700' },
+                  formatter: (val, ctx) => val + '건' + selectionRates[ctx.dataIndex]
+                }
+              }
+            ]
+          },
+          options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: false,
+            layout: {
+              padding: { top: 4, bottom: 4, left: 0, right: 110 }
+            },
+            scales: {
+              x: {
+                grace: '20%',
+                ticks: {
+                  callback: (val) => val + '건',
+                  color: onSurfaceVariant,
+                  font: { family: "'Google Sans', 'Open Sans', sans-serif", size: 12 }
+                },
+                grid: {
+                  color: outlineVariant,
+                  drawTicks: false
+                },
+                border: { display: false }
+              },
+              y: {
+                ticks: {
+                  color: onSurface,
+                  font: { family: "'Google Sans', 'Open Sans', sans-serif", size: 13, weight: '600' }
+                },
+                grid: { display: false },
+                border: { display: false }
+              }
+            },
+            plugins: {
+              legend: { display: false },
+              tooltip: {
+                backgroundColor: surfaceColor,
+                titleColor: onSurface,
+                bodyColor: onSurfaceVariant,
+                borderColor: outlineVariant,
+                borderWidth: 1,
+                titleFont: { family: "'Google Sans', 'Open Sans', sans-serif", size: 13, weight: 'bold' },
+                bodyFont: { family: "'Google Sans', 'Open Sans', sans-serif", size: 13 },
+                padding: 10,
+                callbacks: {
+                  label: (ctx) => ` ${ctx.dataset.label}: ${ctx.raw}건`
+                }
+              }
+            }
+          }
+        });
+      }
+
+      // Theme Listener
+      window.addEventListener("message", (event) => {
+        if (event.data && (event.data.theme === "light" || event.data.theme === "dark")) {
+          document.documentElement.setAttribute("data-theme", event.data.theme);
+          renderVisualizations();
+        }
+      });
+
+      // Initialization on fonts ready
+      document.fonts.ready.then(() => {
+        renderVisualizations();
+      });
+    </script>
+  
+</body></html>
